@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Karen - Marca personal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+ 
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                    
+                </div>
+                <div class="col-md-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white px-3" href="">
+                          
+                        </a>
+                        <a class="text-white px-3" href="">
+                    
+                        </a>
+                        <a class="text-white px-3" href="">
+  
+                        </a>
+                        
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <nav>
+                        <div class="logo">
+                          <img src="img/logopersonal.jpg" alt="Logo Personal" style="height: 100px;">
+                        </div>
+                      </nav>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Acerca de mi</a>
+                        <a href="product.html" class="nav-item nav-link">Formación</a>
+                    </div>
+                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                        <nav>
+                            <div class="logo">
+                              <img src="img/logopersonal.jpg" alt="Logo Personal" style="height: 100px;">
+                            </div>
+                          </nav>
+                    </a>
+                    <div class="navbar-nav mr-auto py-0">
+
+                        <a href="gallery.html" class="nav-item nav-link">Otros estudios</a>
+                        <a href="service.html" class="nav-item nav-link">   Voluntariados</a>
+                        
+                        <a href="contact.html" class="nav-item nav-link">Portfolio</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+
+<!-- Portfolio Start -->
+<style>
+    .portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .portfolio-item {
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        background: none;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 33.3333%;
+        min-height: 600px;
+    }
+
+    .portfolio-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin: 0 0 10px 0;
+        padding: 0;
+        color: white; /* color igual al fondo para “invisible” */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        user-select: none;
+        transition: color 0.3s ease;
+    }
+
+    .portfolio-item:hover > .portfolio-title {
+        color: #222; /* color visible al hacer hover sobre el item */
+    }
+
+    .portfolio-item > .position-relative {
+        margin: 0;
+        padding: 0;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        background: none;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+
+    .portfolio-item img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        background: none;
+       
+        transition: none;
+        user-select: none;
+    }
+
+    .portfolio-btn {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        color: rgba(0, 0, 0, 0.6);
+        background: transparent;
+        text-decoration: none;
+        cursor: pointer;
+        z-index: 10;
+        transition: color 0.3s ease;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    .portfolio-btn:hover {
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .portfolio-description {
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 1rem;
+        color: #444;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: none;
+        margin-top: 10px;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .portfolio-container > .portfolio-item:nth-child(n+4) {
+        margin-top: 30px;
+    }
+
+    @media (max-width: 991.98px) {
+        .portfolio-item {
+            max-width: 50%;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .portfolio-item {
+            max-width: 100%;
+        }
+
+        .portfolio-item > .position-relative {
+            height: auto;
+        }
+
+        .portfolio-item img {
+            max-height: none;
+        }
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        background: white; /* fondo blanco para ejemplo */
+    }
+
+
+    .portfolio-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: white; /* color igual al fondo para ocultar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    pointer-events: none; /* para que no interfiera con clics */
+}
+
+</style>
+
+<div class="container-fluid my-5 py-5 px-0">
+    <div class="row justify-content-center m-0">
+        <div class="col-lg-5">
+            <h1 class="section-title position-relative text-center mb-5">Portfolio</h1>
+        </div>
+    </div>
+
+    <div class="row m-0 portfolio-container">
+
+        <!-- Item 1 -->
+        <div class="portfolio-item">
+            <div class="portfolio-title">Proyecto Agromarket</div>
+            <div class="position-relative overflow-hidden">
+                <img src="img/portfolio-1.jpg" alt="SkyFly 1">
+                <a class="portfolio-btn" href="img/portfolio-1.jpg" data-lightbox="portfolio" aria-label="Abrir imagen SkyFly 1">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="portfolio-item">
+            <div class="portfolio-title">Proyecto Agromarket</div>
+            <div class="position-relative overflow-hidden">
+                <img src="img/portfolio-2.jpg" alt="Agromarket 2">
+                <a class="portfolio-btn" href="https://agromarketsv.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Agromarket">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </div>
+            <div class="portfolio-description">
+                <p>Agromarket es una plataforma web diseñada para facilitar la conexión entre productores agrícolas y compradores, promoviendo el comercio local.</p>
+                <a href="https://agromarketsv.netlify.app/" target="_blank" rel="noopener noreferrer" class="portfolio-link">Agromarket</a>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="portfolio-item">
+            <div class="portfolio-title">Proyecto Agromarket</div>
+            <div class="position-relative overflow-hidden">
+                <img src="img/portfolio-3.jpg" alt="Agromarket 3">
+                <a class="portfolio-btn" href="img/portfolio-3.jpg" data-lightbox="portfolio" aria-label="Abrir imagen Agromarket 3">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="portfolio-item">
+            <div class="portfolio-title">Proyecto SkyFly</div>
+            <div class="position-relative overflow-hidden">
+                <img src="img/portfolio-4.jpg" alt="SkyFly 4">
+                <a class="portfolio-btn" href="img/portfolio-4.jpg" data-lightbox="portfolio" aria-label="Abrir imagen SkyFly 4">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="portfolio-item">
+            <div class="portfolio-title">Proyecto SkyFly</div>
+            <div class="position-relative overflow-hidden">
+                <img src="img/portfolio-5.jpg" alt="SkyFly 5">
+                <a class="portfolio-btn" href="img/portfolio-5.jpg" data-lightbox="portfolio" aria-label="Abrir imagen SkyFly 5">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </div>
+            <div class="portfolio-description">
+                <p>SkyFly ha sido desarrollado para apoyar a los agricultores en la optimización del riego y la aplicación de pesticidas en sus cultivos, minimizando el impacto en la salud humana y el medio ambiente.</p>
+            </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="portfolio-item">
+            <div class="portfolio-title">Proyecto SkyFly</div>
+            <div class="position-relative overflow-hidden">
+                <img src="img/portfolio-6.jpg" alt="SkyFly 6">
+                <a class="portfolio-btn" href="img/portfolio-6.jpg" data-lightbox="portfolio" aria-label="Abrir imagen SkyFly 6">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Portfolio End -->
+
+
+<footer style="background-color:#f8c4d6; color:#222; padding:30px 20px; text-align:center; font-family: 'Poppins', sans-serif;">
+    <!-- Logo -->
+    
+  
+    <!-- Redes sociales -->
+    <div>
+      <a href="https://www.facebook.com/share/1XscvdZw6f/" target="_blank" rel="noopener" style="color:#222; margin: 0 15px; font-size: 35px; text-decoration:none;">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/karen-b-036057339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" style="color:#222; margin: 0 15px; font-size: 35px; text-decoration:none;">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  
+    <!-- Texto de copyright -->
+    <p style="margin-top:20px; font-size:14px;">&copy; 2025 Karen - Marca Personal. Todos los derechos reservados.</p>
+  </footer>
+  
+  <!-- No olvides tener Font Awesome en tu head para que funcionen los iconos -->
+  
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

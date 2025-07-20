@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Karen - Marca personal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <!-- Contenido del topbar izquierdo -->
+                </div>
+                <div class="col-md-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white px-3" href=""></a>
+                        <a class="text-white px-3" href=""></a>
+                        <a class="text-white px-3" href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <nav>
+                        <div class="logo">
+                            <img src="img/logopersonal.jpg" alt="Logo Personal" style="height: 100px;">
+                        </div>
+                    </nav>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Acerca de mi</a>
+                        <a href="product.html" class="nav-item nav-link">Formación</a>
+                    </div>
+                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                        <nav>
+                            <div class="logo">
+                                <img src="img/logopersonal.jpg" alt="Logo Personal" style="height: 100px;">
+                            </div>
+                        </nav>
+                    </a>
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="gallery.html" class="nav-item nav-link">Otros estudios</a>
+                        <a href="service.html" class="nav-item nav-link">Voluntariados</a>
+                        <a href="contact.html" class="nav-item nav-link">Portfolio</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Services End -->
+
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="section-title position-relative mb-5">Otros estudios</h1>
+                    <style>
+                        .clean-image {
+                            border: none !important;
+                            outline: none !important;
+                            box-shadow: none !important;
+                            border-radius: 0 !important;
+                            background-color: #fff;
+                        }
+
+                        .pastel-border {
+                            padding: 5px;
+                            border: 4px solid;
+                            border-radius: 6px;
+                        }
+
+                        /* Colores pastel diferentes */
+                        .pastel-1 {
+                            border-color: #f8c8dc;
+                        }
+
+                        .pastel-2 {
+                            border-color: #cce5ff;
+                        }
+
+                        .pastel-3 {
+                            border-color: #d4edda;
+                        }
+
+                        .pastel-4 {
+                            border-color: #fff3cd;
+                        }
+
+                        .pastel-5 {
+                            border-color: #e2d6f3;
+                        }
+
+                        .pastel-6 {
+                            border-color: #fbe4d5;
+                        }
+
+                        a:focus,
+                        a:active,
+                        .clean-image:focus,
+                        .clean-image:active {
+                            outline: none !important;
+                            box-shadow: none !important;
+                        }
+
+                        /* Animación de agrandado */
+                        .product-item {
+                            transition: transform 0.3s ease;
+                            cursor: pointer;
+                        }
+
+                        .product-item.active {
+                            transform: scale(1.1);
+                            z-index: 2;
+                        }
+                    </style>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- ITEM 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-4 px-3">
+                        <div class="position-relative mb-3 pastel-border pastel-1">
+                            <a href="img/certi1.jpg" data-lightbox="otros-estudios">
+                                <img class="clean-image img-fluid" src="img/certi1.jpg" alt="Curso 1" style="width: 150px; height: 150px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <h5 class="font-weight-semi-bold mb-3">Curso de JavaScript</h5>
+                    </div>
+                </div>
+
+                <!-- ITEM 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-4 px-3">
+                        <div class="position-relative mb-3 pastel-border pastel-2">
+                            <a href="img/certi2.jpg" data-lightbox="otros-estudios">
+                                <img class="clean-image img-fluid" src="img/certi2.jpg" alt="Curso 2" style="width: 150px; height: 150px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <h5 class="font-weight-semi-bold mb-3">Curso de Java</h5>
+                    </div>
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-4 px-3">
+                        <div class="position-relative mb-3 pastel-border pastel-3">
+                            <a href="img/certi3.jpg" data-lightbox="otros-estudios">
+                                <img class="clean-image img-fluid" src="img/certi3.jpg" alt="Curso 3" style="width: 150px; height: 150px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <h5 class="font-weight-semi-bold mb-3">Curso de Introducción a Power BI</h5>
+                    </div>
+                </div>
+
+                <!-- ITEM 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-4 px-3">
+                        <div class="position-relative mb-3 pastel-border pastel-4">
+                            <a href="img/certi4.jpg" data-lightbox="otros-estudios">
+                                <img class="clean-image img-fluid" src="img/certi4.jpg" alt="Curso 4" style="width: 150px; height: 150px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <h5 class="font-weight-semi-bold mb-3">Curso de Prácticas de Ofimática</h5>
+                    </div>
+                </div>
+
+                <!-- ITEM 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-4 px-3">
+                        <div class="position-relative mb-3 pastel-border pastel-5">
+                            <a href="img/certi5.jpg" data-lightbox="otros-estudios">
+                                <img class="clean-image img-fluid" src="img/certi5.jpg" alt="Curso 5" style="width: 150px; height: 150px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <h5 class="font-weight-semi-bold mb-3">Curso de Git y GitHub</h5>
+                    </div>
+                </div>
+
+                <!-- ITEM 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-4 px-3">
+                        <div class="position-relative mb-3 pastel-border pastel-6">
+                            <a href="img/certi6.jpg" data-lightbox="otros-estudios">
+                                <img class="clean-image img-fluid" src="img/certi6.jpg" alt="Curso 6" style="width: 150px; height: 150px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <h5 class="font-weight-semi-bold mb-3">Team Building</h5>
+                    </div>
+                </div>
+
+                <!-- ITEM 7 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-4 px-3">
+                        <div class="position-relative mb-3 pastel-border pastel-1">
+                            <a href="img/certi7.jpg" data-lightbox="otros-estudios">
+                                <img class="clean-image img-fluid" src="img/certi7.jpg" alt="Curso 1" style="width: 150px; height: 150px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <h5 class="font-weight-semi-bold mb-3">Curso de Psicoeducativo</h5>
+                    </div>
+                </div>
+
+                <!-- ITEM 8 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-4 px-3">
+                        <div class="position-relative mb-3 pastel-border pastel-1">
+                            <a href="img/certi8.jpg" data-lightbox="otros-estudios">
+                                <img class="clean-image img-fluid" src="img/certi8.jpg" alt="Curso 1" style="width: 150px; height: 150px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <h5 class="font-weight-semi-bold mb-3">Certificación de Excel </h5>
+                    </div>
+                </div>
+
+                <!-- ITEM 9 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-4 px-3">
+                        <div class="position-relative mb-3 pastel-border pastel-1">
+                            <a href="img/certi9.jpg" data-lightbox="otros-estudios">
+                                <img class="clean-image img-fluid" src="img/certi9.jpg" alt="Curso 1" style="width: 150px; height: 150px; object-fit: contain;">
+                            </a>
+                        </div>
+                        <h5 class="font-weight-semi-bold mb-3">Certificación de JavaScript</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para toggle active sin refrescar -->
+    <script>
+        const items = document.querySelectorAll('.product-item');
+
+items.forEach(item => {
+  item.addEventListener('click', (event) => {
+    event.stopPropagation(); // No propagar clic al documento
+    
+    // Evitamos que el clic en el enlace de la imagen active la tarjeta
+    if (event.target.closest('a[data-lightbox]')) {
+      // Si se clicó en el enlace de imagen, quitar active de esta tarjeta
+      item.classList.remove('active');
+      return; // No hacer toggle activo
+    }
+    
+    const isActive = item.classList.contains('active');
+    items.forEach(i => i.classList.remove('active'));
+    if (!isActive) {
+      item.classList.add('active');
+    }
+  });
+});
+
+// Al hacer clic fuera, quitar active de todas las tarjetas
+document.addEventListener('click', () => {
+  items.forEach(i => i.classList.remove('active'));
+});
+
+      </script>
+      
+</body>
+
+</html>
